@@ -147,3 +147,57 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+//PRIMER POPUP DEL PRODCUTO 
+const buyButton = document.getElementById('buy-button');
+const popup = document.getElementById('popup');
+const popupClose = document.getElementById('popup-close');
+
+buyButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    popup.style.display = 'block';
+});
+
+popupClose.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
+//SEGUNDA POPUP DEL PRODCUTO 
+const buyButton1 = document.getElementById('buy-button1');
+const popup1 = document.getElementById('popup1');
+const popupClose1 = document.getElementById('popup-close1');
+
+buyButton1.addEventListener('click', (event) => {
+    event.preventDefault();
+    popup1.style.display = 'block';
+});
+
+popupClose1.addEventListener('click', () => {
+    popup1.style.display = 'none';
+});
+//TERCERA POPUP DEL PRODCUTO 
+const buyButton2 = document.getElementById('buy-button2');
+const popup2 = document.getElementById('popup2');
+const popupClose2 = document.getElementById('popup-close2');
+
+buyButton2.addEventListener('click', (event) => {
+    event.preventDefault();
+    popup2.style.display = 'block';
+});
+
+popupClose2.addEventListener('click', () => {
+    popup2.style.display = 'none';
+});
+//CUARTA POPUP DEL PRODCUTO 
+const buyButton3 = document.getElementById('buy-button3');
+const popup3 = document.getElementById('popup3');
+const popupClose3 = document.getElementById('popup-close3');
+
+buyButton3.addEventListener('click', (event) => {
+    event.preventDefault();
+    popup3.style.display = 'block';
+});
+
+popupClose3.addEventListener('click', () => {
+    popup3.style.display = 'none';
+});
+
