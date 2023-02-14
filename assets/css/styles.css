@@ -1314,3 +1314,17 @@ body.dark-theme {
         transform: translateX(0);
     }
 }
+/* ESTILO DE LAS DESCRIPCIONES */
+.story__description {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* ANIMACION DE LAS DESCRIPCIONES */
+.story__title {
+  
+  transition: all 0.2s ease-in-out;
+}
+
+

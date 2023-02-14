@@ -200,4 +200,34 @@ buyButton3.addEventListener('click', (event) => {
 popupClose3.addEventListener('click', () => {
     popup3.style.display = 'none';
 });
+//DESCRIPCION DE LOS INGREDIENTES
+const titles = document.querySelectorAll('.story__title');
+
+titles.forEach((title) => {
+  title.addEventListener('click', (event) => {
+    const description = event.target.nextElementSibling;
+    description.classList.toggle('show');
+  });
+});
+//animacion de los ingredientes
+
+function animateTitles() {
+  titles.forEach((title, index) => {
+    setTimeout(() => {
+      title.style.transform = 'scale(1.1)';
+    }, index * 1000);
+  
+    setTimeout(() => {
+      title.style.transform = 'scale(1)';
+    }, (index + 1) * 1000);
+  });
+}
+
+let animationInterval = setInterval(animateTitles, 2000);
+
+titles.forEach((title) => {
+  title.addEventListener('click', () => {
+    clearInterval(animationInterval);
+  });
+});
 
