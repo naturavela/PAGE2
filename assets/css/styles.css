@@ -639,7 +639,7 @@ body.dark-theme {
 .swiper-button-next,
 .swiper-button-prev {
   top: initial;
-  bottom: 5%;
+  bottom: 50%;
   width: initial;
   height: initial;
   background-color: var(--container-color);
